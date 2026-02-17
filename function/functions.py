@@ -13,10 +13,10 @@ def isLesser(a,b):
 
 a=9
 b=8
-# if(a>b):
-#     print("first number is greater")
-# else:
-#     print("second number is greater or equal")
+if(a>b):
+    print("first number is greater")
+else:
+    print("second number is greater or equal")
 calculateGmean(a,b)
 isGreater(a,b)
 # gmean=((a*b)/(a+b))

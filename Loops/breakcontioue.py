@@ -11,10 +11,10 @@ for i in range(13):
       continue
    print("5 X",i+1,"=",5*(i+1))
 
-# #do while
-# i=0
-# while True:
-#    print(i)
-#    i = i+1
-#    if (i%100 == 0):
-#       break   
+#do while
+i=0
+while True:
+   print(i)
+   i = i+1
+   if (i%100 == 0):
+      break   
