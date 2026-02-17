@@ -21,7 +21,3 @@
 # to show what math contain
 # import math
 # print(dir(math))
-
-from demo import welcome, bhavesh
-welcome()
-print(demo)

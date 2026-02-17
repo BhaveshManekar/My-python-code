@@ -1,40 +1,41 @@
 # Dictionaries are ordered colloction of data items.they store multiple items in a single variable.
-# dic ={
-#    "bhavesh":"human being",
-#    "spoon" : "object"
-# }
-# print(dic["bhavesh"])
+# First dictionary
+dic = {
+    "bhavesh": "human being",
+    "spoon": "object"
+}
+print(dic["bhavesh"])
 
-# dic2 = {
-#    125:"bhavesh", 
-#    845:"mahesh" ,
-#    194:"prathmesh", 
-#    128:"himesh" 
-# }
-# print(dic2[194])
+# Second dictionary
+dic2 = {
+    125: "bhavesh",
+    845: "mahesh",
+    194: "prathmesh",
+    128: "himesh"
+}
+print(dic2[194])
 
-# info={"Name":"Bhavesh","age":23,"eligible":True}
-# print(info)
-# print(info["Name"]) # it show the error
-# print(info.get("eligible")) #it does not show the erreo it show "none"
+# Dictionary info
+info = {"Name": "Bhavesh", "age": 23, "eligible": True}
+print(info)
+print(info["Name"])          # correct key
+print(info.get("eligible"))  # safe method
 
-# for keys
-# info={"Name":"Bhavesh","age":23,"eligible":True}
-# print(info)
-# print(info.keys())
-
-# for key in info.keys():
-#     print(info[key])
-
-# for values
-# info={"Name":"Bhavesh","age":23,"eligible":True}
-# print(info)
-# print(info.values())
-
-# for key in info.keys():
-#     print(f"The value corresponding to the key{key} is {info[key]}")
-
-info={"Name":"Bhavesh","age":23,"eligible":True}
-print(info.items())
+# Loop through keys
+print(info.keys())
 for key in info.keys():
-    print(f"The value corresponding to the key{key} is {info[key]}")
+    print(info[key])
+
+# Loop through values
+print(info.values())
+for value in info.values():
+    print(value)
+
+# Loop with formatted output
+for key in info.keys():
+    print(f"The value corresponding to the key {key} is {info[key]}")
+
+# Using items()
+print(info.items())
+for key, value in info.items():
+    print(f"The value corresponding to the key {key} is {value}")
